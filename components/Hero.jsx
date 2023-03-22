@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Hero() {
   return (
-    <div className='grid grid-cols-2 h-[100dvh] overflow-hidden'>
+    <div className='grid grid-cols-2 h-[100dvh] w-full overflow-hidden'>
         
 <div className='grid grid-cols-9 h-full w-full overflow-hidden'>
 <span className='col-span-1 flex h-full w-full bg-[#B9B9B9]'></span>
