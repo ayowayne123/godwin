@@ -21,10 +21,10 @@ function Music() {
     <div id='music' className='container text-[#1E1E1E] w-full py-10 overflow-hidden'>
         
         <div  className='grid md:grid-cols-2 gap-8 w-full'>
-            <div data-aos="fade-right"  className='relative'>
-            <Image src={EpCover} alt='deezer' className='h-full w-full object-contain p-4' fill loading='lazy'/>
+            <div   className='relative md:h-full h-96 w-full'>
+            <Image src={EpCover} alt='deezer' className=' object-contain p-4' fill loading='lazy'/>
             </div>
-            <div data-aos="fade-left"  className='flex flex-col gap-8 lg:pr-10'>
+            <div className='flex flex-col gap-8 lg:pr-10'>
                 <span className='font-bold md:text-3xl text-xl lg:text-5xl uppercase text-center lg:text-left'>{Ep.name}</span>
                 <span className=' lg:text-2xl md:text-xl text-lg text-center lg:text-left '>{Ep.desc}</span>
                 <span>

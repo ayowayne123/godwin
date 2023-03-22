@@ -4,6 +4,7 @@ import Image from 'next/image'
 import hero from '../public/godwinWhite.png'
 import heroPhone from '../public/godwinWhitePhone.png'
 import Logo from '../public/logo.png'
+import LogoVertical from '../public/logoVertical.png'
 import { Link } from 'react-scroll'
 import { BiMenu } from "react-icons/bi";
 
@@ -36,9 +37,9 @@ function Hero() {
 <span className='col-span-2 flex h-full w-full bg-[#D6D5D5]'></span>
 <span className='col-span-2 flex h-full w-full bg-[#DEDEDE]'></span>
 </div>
-<div className='relative w-full h-full hidden md:flex' > 
-<Image src={hero} alt='hero Image' className='object-cover object-right  bg-[#DEDEDE]' fill/> </div>
-<div className='relative w-full h-full md:hidden flex' > 
+<div className='relative w-full h-full hidden lg:flex' > 
+<Image src={hero} alt='hero Image' className='object-cover  bg-[#DEDEDE]' fill/> </div>
+<div className='relative w-full h-full lg:hidden flex' > 
 <Image src={heroPhone} alt='hero Image' className='object-cover object-right  bg-[#DEDEDE]' fill/> </div>
 <div className={` top-0 w-full z-20 fixed hidden lg:flex ${colorChange ? "bg-white" : "bg-inherit"} `}>
     <div className='grid grid-cols-3 w-full container '> 
@@ -57,11 +58,12 @@ function Hero() {
     </div>
     
 </div>
-<div className={` top-20  right-[0%] left-[69%] w-full z-20 absolute lg:hidden flex `}>
-<div className="relative h-full   flex rotate-90  ">
-      <Image src={Logo} alt='hero Image' className='object-contain  w-fit h-8 ' /></div>
+<div className={`inset-0  h-full  w-full z-20 justify-end absolute lg:hidden flex  p-4`}>
+ 
+<div className="relative w-12 md:w-24 h-full items-start    flex   ">
+      <Image src={LogoVertical} alt='hero Image' className='object-contain  ' /></div>
     </div>
-    <div className="fixed p-2 bg-white rounded-md text-3xl top-4 left-4"> <BiMenu/> </div>
+    <div className="z-30 fixed lg:hidden p-2 bg-white rounded-md text-3xl md:text-5xl top-4 left-4"> <BiMenu/> </div>
 
 </div>
     
