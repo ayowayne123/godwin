@@ -1,0 +1,53 @@
+{
+    "name": "Road to Nirvana",
+    "desc": " Road to Nirvana is Godwin’s first official EP. He worked on it with a strong team of Deborah Johnson, Uno Fini and Hearjuno.The album features 4 songs and all their videos are now available on Youtube.",
+    "links":{
+        "spotify":"https://open.spotify.com/album/6ME1OTbg2zX784QlJQYyUh?si=MpUwWsfdR-yBMGfZlMMM0w&nd=1",
+        "appleMusic":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/search?at=1001lbRT&ct=1337704&term=godw3in&app=music",
+        "youtube":"https://youtu.be/oa0dyv87RJQ?list=PLuX9gbz0if8_PbgmHfGKiIvMFEiXJ3BFl",
+        "audioMack":"https://audiomack.com/god3win/song/godw3in-road-to-nirvana",
+        "boomPlay":"https://www.boomplay.com/albums/57092281?from=search&srModel=COPYLINK&srList=WEB",
+        "youtubeMusic":"https://music.youtube.com/playlist?list=OLAK5uy_nLDWiIJ8snlKDErGArTsIo9UPPM0gXPXY",
+        "deezer":"https://www.deezer.com/us/album/368575777?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=album-368575777&deferredFl=1",
+        "tidal":"https://tidal.com/browse/album/255513990",
+        "itunes":"https://music.apple.com/ng/album/road-to-nirvana-ep/1651215802?at=1001lbRT&ct=1337704"
+    },
+    
+    "songList":
+    [
+        {
+            "name":"Road to Nirvana",
+            "time":"1:47",
+            "vidLink":"https://www.youtube.com/watch?v=ce_csNBOjB0",
+            "audLink":""
+    
+    },
+    {
+        "name":"Now",
+        "time":"3:14",
+        "vidLink":"https://youtu.be/oa0dyv87RJQ",
+        "audLink":""
+
+},
+{
+    "name":"ILE",
+    "time":"2:55",
+    "vidLink":"https://www.youtube.com/watch?v=BsdmJWM0QAQ",
+    "audLink":""
+
+},
+{
+    "name":"Proud of you",
+    "time":"3:39",
+    "vidLink":"https://youtu.be/JCgT2dpw1xM?t=714",
+    "audLink":""
+
+}
+    ],
+    "additions":{
+        "performedBy":"GODWIN",
+        "producedBy":"Uno fini",
+        "lyricsBy":"GODWIN gaza josiah, Deborah Johnson",
+        "additionalVocals":"Hearjuno"
+    }
+}
