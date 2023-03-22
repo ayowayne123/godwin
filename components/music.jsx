@@ -44,14 +44,14 @@ function Music() {
                 </span>
             </div>
         </div>
-        <div className='items-center w-full flex flex-col justify-center'> 
+        <div data-aos="fade-up" className='items-center w-full flex flex-col justify-center'> 
         <div className='w-[800px] gap-6 py-16 flex flex-col  ' > 
 <span className='flex w-full justify-center text-4xl font-medium uppercase'>Song List</span>
 
   <div className='border-b-2 border-black'></div>
   {Ep.songList.map(song =>
     
-    <div className='w-full flex justify-between items-center '>
+    <div key={song.id} className='w-full flex justify-between items-center '>
     <span className='text-2xl'>{song.name}</span>
     <span className='w-1/5 flex-row flex justify-between items-center'>
       <Link className="uppercase font-medium hover:text-slate-600" href={song.audLink}> Play</Link>
