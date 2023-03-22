@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import hero from '../public/godwinWhite.png'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 
 
 function Hero() {
@@ -20,11 +20,11 @@ function Hero() {
 <div className='fixed top-0 w-full z-20  '>
     <div className='grid grid-cols-3 w-full '> 
     <div></div>
-    <div className='flex flex-row col-span-2 justify-around h-16 items-center font-bold text-[#1E1E1E] text-lg'><Link href='#music'>Music</Link>
-    <Link href='#videos'>Videos</Link>
-    <Link href='#events'>Events</Link>
-    <Link href='#about'>About</Link>
-    <Link href='#contact'>Contact</Link>
+    <div className='flex flex-row col-span-2 justify-around h-16 items-center font-bold text-[#1E1E1E] text-lg'><Link className='cursor-pointer' smooth={true}  to='music'>Music</Link>
+    <Link className='cursor-pointer' smooth={true} to='videos'>Videos</Link>
+    <Link className='cursor-pointer' smooth={true} to='#events'>Events</Link>
+    <Link className='cursor-pointer' smooth={true} to='#about'>About</Link>
+    <Link className='cursor-pointer' smooth={true} to='#contact'>Contact</Link>
     </div>
     </div>
     

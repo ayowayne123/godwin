@@ -22,7 +22,7 @@ function Music() {
         
         <div  className='grid md:grid-cols-2 gap-8 w-full'>
             <div data-aos="fade-right"  className='relative'>
-            <Image src={EpCover} alt='deezer' className='h-full w-full object-contain p-4' fill/>
+            <Image src={EpCover} alt='deezer' className='h-full w-full object-contain p-4' fill loading='lazy'/>
             </div>
             <div data-aos="fade-left"  className='flex flex-col gap-8 pr-10'>
                 <span className='font-bold text-5xl uppercase'>{Ep.name}</span>

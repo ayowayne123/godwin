@@ -3,7 +3,7 @@ import React,{useEffect} from "react";
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
+import Video from "@/components/video";
 import Hero from '@/components/Hero'
 import Music from '@/components/music'
 import AOS from 'aos';
@@ -27,6 +27,7 @@ export default function Home() {
       <main >
   <Hero/>
   <Music/>
+  <Video/>
         
       </main>
     </>
