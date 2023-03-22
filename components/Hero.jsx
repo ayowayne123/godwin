@@ -1,10 +1,31 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import hero from '../public/godwinWhite.png'
 import { Link } from 'react-scroll'
 
 
 function Hero() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [transparent,setTransparent] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0.1) || currentScrollPos < 10);
+      console.log('scroll',prevScrollPos, currentScrollPos,visible);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    if (window.scrollY>40)
+    setTransparent(false)
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   return (
     <div className='grid grid-cols-2 h-[100dvh] w-full overflow-hidden'>
         
@@ -15,9 +36,9 @@ function Hero() {
 <span className='col-span-2 flex h-full w-full bg-[#D6D5D5]'></span>
 <span className='col-span-2 flex h-full w-full bg-[#DEDEDE]'></span>
 </div>
-<div className='relative w-full h-full'> 
+<div className='relative w-full h-full' > 
 <Image src={hero} alt='hero Image' className='object-cover bg-[#DEDEDE]' fill/> </div>
-<div className='fixed top-0 w-full z-20  '>
+<div className={` top-0 w-full z-20 ${visible ? 'fixed flex ' : 'hidden'} ${transparent? 'bg-transparent' : 'bg-white'} `}>
     <div className='grid grid-cols-3 w-full '> 
     <div></div>
     <div className='flex flex-row col-span-2 justify-around h-16 items-center font-bold text-[#1E1E1E] text-lg'><Link className='cursor-pointer' smooth={true}  to='music'>Music</Link>
