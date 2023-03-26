@@ -51,7 +51,7 @@ function Music() {
   <div className='border-b-2 border-black'></div>
   {Ep.songList.map(song =>
     
-    <div key={song.id} className='w-full flex flex-col mdLflex-col justify-between items-center '>
+    <div key={song.id} className='w-full flex flex-col md:flex-row justify-between items-center '>
     <span className='md:text-2xl text-xl'>{song.name}</span>
     <span className='md:w-1/5  flex-row flex md:justify-between gap-3 items-center'>
       <Link className="uppercase font-medium hover:text-slate-600 text-sm md:text-base" href={song.audLink}> Play</Link>

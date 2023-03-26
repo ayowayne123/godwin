@@ -41,7 +41,7 @@ function Hero() {
 <Image src={hero} alt='hero Image' className='object-cover  bg-[#DEDEDE]' fill/> </div>
 <div className='relative w-full h-full lg:hidden flex' > 
 <Image src={heroPhone} alt='hero Image' className='object-cover object-right  bg-[#DEDEDE]' fill/> </div>
-<div className={` top-0 w-full z-20 fixed hidden lg:flex ${colorChange ? "bg-white" : "bg-inherit"} `}>
+<div className={` top-0 w-full z-20 absolute hidden lg:flex ${colorChange ? "bg-white" : "bg-inherit"} `}>
     <div className='grid grid-cols-3 w-full container '> 
     <div className="h-16 col-span-1 w-full inline-flex items-center justify-self=start  "> 
     <div className="relative h-10 w-full items-center justify-start flex  ">
