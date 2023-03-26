@@ -51,9 +51,9 @@ function Hero() {
     <div className='flex flex-row col-span-2 justify-around h-16 items-center font-bold text-[#1E1E1E] text-lg'>
       <Link className='cursor-pointer' smooth={true}  to='music'>Music</Link>
     <Link className='cursor-pointer' smooth={true} to='videos'>Videos</Link>
-    <Link className='cursor-pointer' smooth={true} to='#events'>Events</Link>
-    <Link className='cursor-pointer' smooth={true} to='#about'>About</Link>
-    <Link className='cursor-pointer' smooth={true} to='#contact'>Contact</Link>
+    <Link className='cursor-pointer' smooth={true} to='events'>Events</Link>
+    <Link className='cursor-pointer' smooth={true} to='about'>About</Link>
+    <Link className='cursor-pointer' smooth={true} to='contact'>Contact</Link>
     </div>
     </div>
     
