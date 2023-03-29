@@ -36,16 +36,17 @@ function Music() {
                     <Image src={Deezer} alt='deezer' className='h-12 w-20 object-contain grayscale hover:grayscale-0' fill/> </a>}
                     {Ep.links.audioMack && <a className=' font-bold flex relative h-full w-full  items-center' href={Ep.links.audioMack}>  
                    <AudioMack/> </a>}
+                   {Ep.links.boomPlay && <a className='font-bold flex  items-center' href={Ep.links.boomPlay}> <Boomplay/> </a>}
                     {Ep.links.tidal && <a className=' font-bold flex  items-center' href={Ep.links.tidal}>  <Tidal/> </a>}
                     {Ep.links.youtubeMusic && <a className='font-bold flex flex-row gap-1 items-center text-xl md:text-2xl lg:text-4xl justify-center group' href={Ep.links.youtubeMusic}> <span className='text-2xl md:text-3xl lg:text-5xl  group-hover:text-[#f00]'><SiYoutubemusic/> </span> Music </a>}
                     {Ep.links.itunes && <a className='font-bold flex  items-center' href={Ep.links.itunes}> <ITunes/> </a>}
-                    {Ep.links.boomPlay && <a className='font-bold flex  items-center' href={Ep.links.boomPlay}> <Boomplay/> </a>}
+                    
                     </span>
                 </span>
             </div>
         </div>
         <div data-aos="fade-up" className='items-center w-full flex flex-col justify-center'> 
-        <div className='lg:w-[800px] md:w-[650px] w-3/4 gap-3 md:gap-6 py-16 flex flex-col  ' > 
+        <div className='lg:w-2/3 md:w-[650px] w-3/4 gap-3 md:gap-6 py-5 md:py-9 lg:py-16 flex flex-col  ' > 
 <span className='flex w-full justify-center text-2xl md:text-4xl font-medium uppercase'>Song List</span>
 
   <div className='border-b-2 border-black'></div>

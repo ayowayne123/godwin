@@ -16,7 +16,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      
+    );
   }, [])
   return (
     <>
