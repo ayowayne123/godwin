@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from 'next/image'
 import hero from '../public/godwinWhite.png'
+import heroAlt from "../public/HeroAlt.jpg"
 import heroPhone from '../public/godwinWhitePhone.png'
 import Logo from '../public/logo.png'
 import LogoVertical from '../public/logoVertical.png'
@@ -30,7 +31,7 @@ function Hero() {
 
 
   return (
-    <div className='grid lg:grid-cols-2 h-[100vh] w-full overflow-hidden'>
+    <div className='grid lg:grid-cols-2 h-[100dvh] w-full overflow-hidden'>
 
       <div className='lg:grid grid-cols-9 hidden h-full w-full overflow-hidden'>
         <span className='col-span-1 flex h-full w-full bg-[#B9B9B9]'></span>
@@ -41,12 +42,12 @@ function Hero() {
       </div>
 
       <div className='relative w-full h-full hidden lg:flex'>
-        <Image src={hero} alt='hero Image' className='object-cover  bg-[#DEDEDE]' fill />
+        <Image src={heroAlt} alt='hero Image' className='object-cover object-bottom  bg-[#DEDEDE]' fill />
        
       </div>
 
       <div className='relative w-full h-full lg:hidden flex'>
-        <Image src={heroPhone} alt='hero Image' className='object-cover object-right  bg-[#DEDEDE]' fill />
+        <Image src={heroAlt} alt='hero Image' className='object-cover object-bottom  bg-[#DEDEDE]' fill />
       </div>
 
    
